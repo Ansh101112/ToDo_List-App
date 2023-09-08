@@ -1,0 +1,179 @@
+/* App.css */
+
+/* Style for the entire navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Add your desired background color */
+  color: white; /* Add your desired text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style for the heading */
+h1 {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+/* Style for the download button */
+.btn {
+  background-color: #007bff; /* Add your desired button background color */
+  color: white; /* Add your desired button text color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  margin-left: 68%;
+}
+input[type="text"] {
+  width: 100%; /* Make the input fields take up the full width */
+  padding: 10px; /* Adjust padding as needed */
+  margin: 10px 0; /* Adjust margin as needed */
+  border: 1px solid #ccc; /* Add a border for clarity */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style for input placeholders (optional) */
+input[type="text"]::placeholder {
+  color: #999; /* Customize the placeholder text color */
+}
+hr{
+  width: 100%;
+  border: 2px solid black;
+}
+.addtasks{
+  width: 185px;
+  height: 25px;
+  margin: 1%;
+  margin-left: 43%;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+/* CSS for Task Section */
+.tasksection {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: slategrey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease; /* Add a fade-in animation */
+}
+
+.tasksection:nth-child(odd) {
+  background-color: burlywood; /* Alternate background color for odd tasks */
+}
+
+.tasksection li {
+  list-style: none; /* Remove default list styles */
+}
+
+.task {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.taskdesc {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.renderhead{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1;
+}
+.dark{
+  background-color: #333; /* Dark background color for the button */
+  color: #fff; /* Text color for the button */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dark:hover{
+  background-color: #555;
+}
+.btn:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}
+/* CSS for Delete Button */
+.tasksection {
+  position: relative; /* Make the task section a positioning context for the delete button */
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.tasksection:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.tasksection li {
+  list-style: none;
+}
+
+.task-number {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.task {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.taskdesc {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.delete-button {
+  position: absolute; /* Position the delete button absolutely within the task section */
+  top: 5px; /* Adjust the top position as needed */
+  right: 5px; /* Adjust the right position as needed */
+  background-color: #ff6347; /* Red background color for the delete button */
+  color: white; /* Text color for the delete button */
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #e74c3c; /* Slightly darker red on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
